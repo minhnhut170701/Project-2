@@ -1,0 +1,703 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: url("./images/bg-pattern-intro-desktop.svg"), linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: -20px;
+}
+
+nav{
+    max-width: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 33px;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    padding-right: 32px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown:hover .dropdown-content{
+    opacity: 1;
+    top: 30px;
+   
+}
+
+.dropdown-content{
+    min-width: 100px;
+    border: 1px solid black;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: -20px;
+    top: -150px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.dropdown-content a:hover{
+
+    font-weight: 600;
+
+}
+
+nav div .log{ 
+    padding:  10px 30px;
+    border-radius: 20px;
+    border-color: transparent;
+    color: #FFFFFF;
+    background: transparent;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+
+nav div .sig{
+    padding:  10px 30px;
+    border-radius: 20px;
+    border-color: transparent;
+    color: #FF505C;
+    background-color: white;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+nav div .sig:hover{
+    background-color: #FF7B86;
+    color: white;
+}
+
+
+header section{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header section h1{
+    font-family: 'Overpass SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 98px;
+    color: #FFFFFF;
+    letter-spacing: -1.92px;
+   
+}
+
+header section p {
+    font-family: 'Overpass Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+   margin-top: -50px;
+   color: #FFFFFF;
+}
+
+header section div .start{
+    padding:  10px 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: none;
+    color: #FF7B86;
+    background-color: white;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+header section div .start:hover{
+    background-color: #FF7B86;
+    color: white;
+}
+
+
+header section div .learn{
+    padding:  10px 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: #FF505C;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+header section div .learn:hover{
+    background-color: white;
+    color: #FF7B86;
+}
+/* main */
+main{
+    max-width: 100%;
+    overflow: hidden;
+}
+main .box-desktop{
+    margin-top: 140px;
+}
+
+main .box-desktop h1{
+    text-align: center;
+    font-family: 'Overpass SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 61px;
+    letter-spacing: -1.2px;
+    color: #1F3E5A;
+   
+    
+
+}
+.box-section-desktop{
+    display: flex;
+    align-items: center;
+    margin-top: -70px;
+}
+
+
+.box-section-desktop .desktop{
+    background: url('./images/illustration-editor-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 500px;
+   
+}
+
+
+.desktop-item section{
+    width: 70%;
+    margin-left: 50px;
+}
+
+.desktop-item section h2{
+    font-family: 'Overpass SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    color: #1F3E5A;
+}
+
+.desktop-item section p{
+    font-family: 'Overpass Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #4C5862;
+}
+
+/* box phone */
+.box-phone{
+    position: relative;
+    height: 400px;
+    background: linear-gradient(135deg, #2D2E40 0%, #3F4164 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 100px;
+    margin-bottom: 200px;
+    margin-top: 57px;
+    
+}
+.phone-bg{
+    height: 350px;
+    padding: 20px;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    
+
+}
+
+.phone-bg img{
+    width: 60%; 
+    position: relative; 
+    top: -300px;
+}
+
+.phone-item{
+    position: relative;
+    z-index: 3;
+    top: -100px;
+    display: flex;
+    align-items: center;
+}
+
+.phone-item section{
+    width: 40%;
+    margin-left: 100px;
+}
+
+.phone-item section h1{
+    font-family: 'Overpass SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 61px;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+}
+
+.phone-item section p{
+    font-family: 'Overpass Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    margin-top: -20px;
+}
+
+/* box laptop */
+
+.box-laptop{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+
+.laptop{
+    background: url('./images/illustration-laptop-desktop.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 500px;
+    margin-left: -200px;
+}
+
+.laptop-item{
+    width: 40%;
+    margin-left: 125px;
+
+}
+
+.laptop-item section h1{
+    font-family: 'Overpass SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    color: #1F3E5A;
+}
+.laptop-item section p{
+    font-family: 'Overpass Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #4C5862;
+}
+
+/* footer */
+
+footer{
+    margin-top: 123px;
+    height: 359px;
+    left: 0px;
+    background: #24242C;
+    border-radius: 0px 100px 0px 0px;
+}
+
+ footer .box-footer{
+    display: flex;
+    width: 70%;
+    margin-left: 165px;
+    padding-top: 70px; 
+    justify-content: space-around;
+}
+
+.box-footer h1{
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.box-footer ul{
+    margin-top: 30px;
+}
+
+.box-footer ul li{
+    list-style: none;
+    padding: 5px;
+}
+.box-footer ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.box-footer ul li a:hover{
+    text-decoration: underline;
+
+}
+
+.box-footer ul .active{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 21px;
+}
+
+/* menu mobile */
+.active-mobi{
+    display: none;
+}
+
+
+
+/* mobile */
+
+@media (max-width: 500px) {
+    header .menu-desktop{
+        display: none;
+    }
+
+    header{
+        margin-top: -50px;
+        border-radius:  0 70px;
+    }
+    /* menu header */
+    .active-mobi{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 70px;
+       
+    }
+    .menu{
+      position: relative;
+      cursor: pointer;
+    }
+
+    .menu .dot{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .dot span{
+        padding: 1px 15px;
+        background-color: white;
+       margin-top: 5px;
+    }
+
+   .logo{
+       font-size: 2rem;
+        color: #FFFFFF;
+   }
+
+   .menu .menu-item{
+       width: 350px;
+        background-color: white;
+       position: absolute;
+        display: none;
+       top: 40px;
+        right: 0;
+     
+       
+   }
+
+   .menu-item nav{
+        width: 80%;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+   }
+
+   .menu-item nav .sig{
+       background-color: #FF3E55;
+       color: #FFFFFF;
+   }
+   .menu-item nav ul{
+       flex-direction: column;
+      align-items: center;
+     
+      
+   }
+
+   .menu-item nav ul li{
+       padding-right: 0;
+        padding: 10px;
+      margin-left: -20px;
+   }
+
+   .menu-item nav ul li a{
+       color: black;
+   }
+   .menu-item nav ul .dropdown{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-top: -10px;
+       
+   }
+   .menu-item nav ul .dropdown .dropdown-content{
+        position: relative;
+        border: 1px solid black;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        display: none;
+        width: 100%;
+       background-color: #eeeef0;
+       color: #1F3E5A;
+        
+   }
+
+   
+   .dropdown-content .item{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       
+   }
+
+   
+
+   .menu-item nav div .log{
+       color: black;
+   }
+   .menu-item nav div{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 20px;
+      
+   }
+
+
+   .menu-item nav ul .dropdown .dropdown-content.show{
+    display: block;
+    }
+
+    .menu-item.modal{
+        display: block;
+    }
+
+   /* text-banner */
+
+   header section{
+       width: 90%;
+       margin-top: 50px;
+   }
+   
+   header section h1{
+    font-size: 36px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: -1.08px;
+   }
+
+   header section p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: -10px;    
+   }
+
+   /*====== main========== */
+   /*section 1 desktop */
+   .box-desktop{
+       margin-top: -50px;
+   }
+   .box-section-desktop{
+      width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+   }
+
+   .desktop-item section{
+       width: 40%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       position: relative;
+       top: -100px;
+
+   }
+
+   .desktop-item section h2{
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+   
+   }
+
+   .desktop-item section p{
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.5px;
+   }
+   .box-section-desktop .desktop{
+       background: url('./images/illustration-editor-mobile.svg');
+       background-repeat: no-repeat;
+       grid-row-start: 1;
+       margin-top: 60px;
+       
+   }
+
+   /* section 2 phone */
+
+   .box-phone{
+        border-radius: 0px 100px;
+       
+        width: 100%;
+        height: 725px;
+   }
+
+   .phone-bg{
+        height: 550px;
+   }
+
+   .phone-bg img{
+       top: -80px;
+       left: -50px;
+       width: 120%;
+       position: relative;
+   }
+
+   .phone-item{
+       flex-direction: column;
+       align-items: center;
+      width: 100%;
+   }
+   .phone-item img{
+        margin-top: -100px;
+        padding-top: 50px;
+        width: 90%;
+   }
+
+   .phone-item section{
+       text-align: center;
+       margin-left: 0;
+       width: 80%;
+   }
+
+   .phone-item section h1{
+    font-size: 40px;
+    line-height: 61px;
+    letter-spacing: -1.2px;
+   }
+
+   .phone-item section p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+   }
+
+
+   /* secction 3 laptop */
+   .box-laptop{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       width: 80%;
+   }
+   .laptop{
+       background: url("./images/illustration-laptop-mobile.svg");
+       background-repeat: no-repeat;
+       width: 500px;
+       height: 500px;
+      margin: 0 auto;
+   }
+   .laptop-item{
+       width: 80%;
+       margin-top: -50px;
+
+   }
+
+   .laptop-item section h1{
+    font-size: 28px;
+    line-height: 32px;
+   }
+
+   .laptop-item section p{
+    font-size: 16px;
+    line-height: 28px;
+   }
+
+   /* footer */
+   footer{
+       height: auto;
+       width: 100%;
+   }
+   footer .box-footer{
+       flex-direction: column;
+       align-items: center;
+       width: 80%;
+       margin-left: 0;
+       margin: 0 auto;
+   }
+
+}
